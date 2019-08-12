@@ -1,7 +1,7 @@
 <?php
 include 'db.php';
-$tournamentID = intval($_POST["tournament_id"]);
-$results = $c->query("SELECT * FROM comments WHERE tournament_id=" . $tournamentID);
+$userID = intval($_POST["user_id"]);
+$results = $c->query("SELECT * FROM comments WHERE user_id=" . $userID);
 $comments = [];
 if ($results && $results->num_rows > 0) {
 	while ($row = $results->fetch_assoc()) {
