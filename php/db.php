@@ -1,3 +1,3 @@
 <?php
-$c = new mysqli("localhost", "u4785556_user1", "HelloWorld123");
-$c->select_db("u4785556_jbscore");
+$c = new mysqli("localhost", "jbtvkune_jbscore", "HaloDunia123");
+$c->select_db("jbtvkune_jbscore");
