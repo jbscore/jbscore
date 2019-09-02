@@ -1,5 +1,6 @@
 <?php
 include 'db.php';
+$c->query("SET NAMES 'utf8'");
 $results = $c->query("SELECT * FROM schedules");
 $schedules = [];
 if ($results && $results->num_rows > 0) {
